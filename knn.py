@@ -53,9 +53,6 @@ class KNNClassifier:
            with distances between each test and each train sample
         """
 
-        """
-        YOUR CODE IS HERE
-        """
 
         distances = np.zeros((len(X), len(self.train_X)))
         for i in range(len(X)):
@@ -76,9 +73,6 @@ class KNNClassifier:
            with distances between each test and each train sample
         """
 
-        """
-        YOUR CODE IS HERE
-        """
 
         distances = np.zeros((len(X), len(self.train_X)))
         for i in range(len(X)):
@@ -98,9 +92,6 @@ class KNNClassifier:
            with distances between each test and each train sample
         """
 
-        """
-        YOUR CODE IS HERE
-        """
 
         distances = np.abs(X[:, None] - self.train_X).sum(axis=-1)
         return distances
